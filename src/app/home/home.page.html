@@ -7,8 +7,17 @@
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+  <form>
+    <table cellspacing="10">
+    <tr>
+        <td> Your Name :&nbsp;&nbsp;&nbsp;</td> 
+        <td><input type="text" name="name" placeholder="your name" [(ngModel)]="name"  required></td>
+        <td><button (click) ="send()" class="buttonsubmit"> Submit </button> </td>
+    </tr>
+
+   
+      
+</table>    
+
+</form>
 </ion-content>
